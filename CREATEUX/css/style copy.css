@@ -1,0 +1,11 @@
+body {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.graybox {
+  display: flex;
+  background-color: #868686;
+  flex-basis: 400;
+  
+}

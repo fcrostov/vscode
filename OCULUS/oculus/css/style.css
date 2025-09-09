@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-html{
+html {
   box-sizing: border-box;
   line-height: 100%;
   font-family: 'Helvetica', sans-serif;
@@ -23,20 +23,20 @@ html{
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
@@ -102,7 +102,7 @@ button {
   justify-self: right;
 }
 
-.cart--on span{
+.cart--on span {
   font-size: 11px;
   width: 15px;
   height: 15px;
@@ -171,7 +171,7 @@ button {
 }
 
 .features {
-  padding: 100px 0 ;
+  padding: 100px 0;
 }
 
 .features__titles {
@@ -249,7 +249,7 @@ button {
   color: #F6F5F4;
 }
 
-.tabs__content-box h3{
+.tabs__content-box h3 {
   font-weight: normal;
   font-size: 24px;
   margin-bottom: 5px;
@@ -350,9 +350,9 @@ border-image-slice: 1;
 }
 
 .game__item-title {
-font-size: 24px;
-margin-bottom: 10px;
-font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: normal;
 }
 
 .game__item-text {
@@ -364,4 +364,70 @@ font-weight: normal;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   margin-top: auto;
+}
+
+.buy {
+  margin-bottom: 110px;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.buy__bg {
+  background: linear-gradient(180.00deg, rgba(187.75599670410156, 16.17656707763672, 215.6875, 1), rgba(79.9000473022461, 0, 249.6875, 0.93) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.1;
+  font-size: 400px;
+  font-weight: 700;
+  line-height: 400px;
+  position: absolute;
+  z-index: -1;
+  animation: line-text 6s linear 1s infinite;
+}
+
+@keyframes line-text{
+  from{
+    transform: translate(115%);
+    transform-origin: left center;
+  }
+  to{
+    transform: translate(-115%);
+    transform-origin: right center;
+  }
+}
+
+.buy__img {
+  margin-bottom: 30px;
+}
+
+.buy .buy-btn {
+  margin: 0 auto;
+}
+
+.equipment {
+  margin-bottom: 100px;
+}
+
+.equipment__title {
+  margin-bottom: 50px;
+}
+
+.equipment__box {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.equipment__box img {
+  margin-bottom: 10px;
+}
+
+.equipment__box-title {
+  line-height: 50px;
+}
+
+.equipment__box-item--one {
+  grid-row: 1/-1;
 }

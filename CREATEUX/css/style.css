@@ -1,8 +1,18 @@
-body {
+html, body {
   font-family: Lato, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgb(66, 69, 81);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;       /* Вместо min-width: 100vh */
+  margin: 0;         /* Чтобы не было незапланированных отступов */
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -14,15 +24,19 @@ a:hover {
 }
 
 .wrapper {
-min-height: 100%;
+min-height: 100vh;
 width: 100%;
 overflow: hidden;
+flex: 1; /* занимает оставшееся место в body */
+display: flex;
+flex-direction: column;
+min-height: 0;
 }
 
 .container {
-  max-width: 1260px;
-  padding: 0 15px;
-  margin: 0 auto;
+max-width: 1260px;
+padding: 0 15px;
+margin: 0 auto;
 }
 
 .common_btn {
@@ -47,12 +61,13 @@ overflow: hidden;
   transform: scale(1.05)
 }
 
-.logo {
-}
-
 /* ------------------------------------------------ */
 
 .header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .header__top-inner {
@@ -64,9 +79,6 @@ overflow: hidden;
 
 .header__logo {
   margin-right: 60px;
-}
-
-.header__nav {
 }
 
 .header__nav-list {
@@ -87,9 +99,6 @@ overflow: hidden;
   padding-right: 0px;
 }
 
-.header__nav-link {
-}
-
 .header__btn-box {
   display: flex;
   justify-content: center;
@@ -108,13 +117,18 @@ overflow: hidden;
     padding: 5px  0px;
 }
 
-.header__top-login {
-}
-
-.header__user-nav {
-}
-
 .header__user-item {
 display: flex;
 padding: 0 3px;;
+}
+
+.header__body {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  min-height: 0;
+}
+
+.header__body-inner {
+  background-color: green;
 }
