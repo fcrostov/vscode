@@ -424,6 +424,10 @@ button {
   margin-bottom: 100px;
 }
 
+.accessories {
+  margin-bottom: 100px;
+}
+
 .accessories__title {
   margin-bottom: 30px;
 }
@@ -484,4 +488,69 @@ button {
 .empty {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.contacts {
+  margin-bottom: 100px;
+}
+
+.contacts__title {
+  color: #070707;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.contacts__form {
+  flex-basis: 600px;
+}
+
+.form {
+  margin-bottom: 10px;
+  position: relative;
+  min-height: 55px;
+  display: flex;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid #CACAD6;
+  width: 100%;
+  padding: 22px 70px 22px 5px;
+}
+
+.form__input::placeholder {
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-size: 13px;
+}
+
+.form__btn {
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  background-color: #CACAD6;
+  font-weight: 700;
+  color: #5C5C5E;
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+}
+
+.contacts__text {
+}
+
+.contacts__email {
 }
